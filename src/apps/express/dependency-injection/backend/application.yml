@@ -1,0 +1,12 @@
+services:
+  Apps.express.controllers.IndexGetController:
+    class: ../../controllers/IndexGetController
+    arguments: []
+
+  Apps.express.controllers.status.StatusGetController:
+    class: ../../controllers/StatusGetController
+    arguments: []
+
+  Apps.express.controllers.users.UserPostController:
+    class: ../../controllers/users/UserPostController
+    arguments: ["@Contexts.users.application.UserCreator"]

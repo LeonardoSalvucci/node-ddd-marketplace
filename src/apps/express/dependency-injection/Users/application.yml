@@ -1,0 +1,8 @@
+services:
+  Contexts.users.application.UserCreator:
+    class: ../../../../Contexts/Users/application/UserCreator
+    arguments: ["@Contexts.users.domain.CourseRepository"]
+
+  Contexts.users.domain.CourseRepository:
+    class: ../../../../Contexts/Users/infrastructure/presistence/FileUserRepository
+    arguments: []
